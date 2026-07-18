@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PI ESO</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="shortcut icon" href="assets/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <header class="hero" id="top">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-icon icon-book">📘</div>
+    <div class="floating-icon icon-pencil">✏️</div>
+    <div class="floating-icon icon-bulb">💡</div>
+    <div class="floating-icon icon-formula">∑</div>
+
+    <nav class="navbar container">
+      <a class="brand brand-home-image" href="#top"><img src="assets/home-page.png" alt="Ir a la página principal" class="home-brand-img"></a>
+      <div class="tools-menu">
+        <button class="tools-button" type="button" aria-label="Abrir herramientas" aria-haspopup="true">
+          <img src="assets/tool.svg" alt="Herramientas" class="tools-img">
+        </button>
+        <div class="tools-dropdown" role="menu">
+          <a href="herramientas/factorizar.html" role="menuitem">Factorizar</a>
+          <a href="herramientas/calculadora-mcm.html" role="menuitem">Calculadora mcm</a>
+          <a href="herramientas/calculadora-mcd.html" role="menuitem">Calculadora mcd</a>
+</div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="cursos/1eso.html">1º ESO</a>
+        <a class="nav-unavailable" href="cursos/2eso.html" data-unavailable-course>2º ESO</a>
+        <a class="nav-unavailable" href="cursos/3eso.html" data-unavailable-course>3º ESO</a>
+        <a class="nav-unavailable" href="cursos/4eso.html" data-unavailable-course>4º ESO</a>
+        
+      </div>
+    </nav>
+
+    <section class="hero-inner container">
+      <div class="hero-copy scroll-pop">
+        <span class="pill">Plataforma para estudiantes de la ESO</span>
+        <div class="hero-panel">
+          <div class="hero-badge bounce">Novedad</div>
+          <h1><span class="brand-mark">PI <img src="assets/pi-mascot.png" alt="Mascota PIESO" class="brand-mascot"> ESO</span></h1>
+          <p class="subtitle">Aprende Matemáticas de forma clara y guiada: accede a <strong>temarios</strong>, practica con <strong>ejercicios autocorregibles</strong> y utiliza herramientas como factorización, mcm y MCD para reforzar lo aprendido paso a paso.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary pulse" href="#niveles">Explorar cursos</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual scroll-pop">
+        <div class="avatar-showcase tilt-on-scroll">
+          <div class="spark spark-1"></div>
+          <div class="spark spark-2"></div>
+          <div class="spark spark-3"></div>
+          <div class="spark spark-4"></div>
+          <img src="assets/hero-classroom.png" alt="Mascota PIESO sentada en un pupitre" class="hero-mascot hero-mascot-classroom float-hero">
+        </div>
+      </div>
+    </section>
+
+    <div class="mini-marquee">
+      <div class="mini-marquee-track">
+        <span>Números naturales</span><span>Divisibilidad</span><span>Números enteros</span><span>Potencias</span><span>Números romanos</span><span>Fracciones y decimales</span><span>Proporcionalidad y porcentajes</span><span>Álgebra</span><span>Geometría</span><span>Funciones</span><span>Estadística y probabilidad</span><span>Números racionales</span><span>Potencias y raíces</span><span>Polinomios</span><span>Ecuaciones y sistemas</span><span>Números reales</span><span>Ecuaciones e inecuaciones</span><span>Trigonometría</span><span>Geometría analítica</span>
+        <span>Números naturales</span><span>Divisibilidad</span><span>Números enteros</span><span>Potencias</span><span>Números romanos</span><span>Fracciones y decimales</span><span>Proporcionalidad y porcentajes</span><span>Álgebra</span><span>Geometría</span><span>Funciones</span><span>Estadística y probabilidad</span><span>Números racionales</span><span>Potencias y raíces</span><span>Polinomios</span><span>Ecuaciones y sistemas</span><span>Números reales</span><span>Ecuaciones e inecuaciones</span><span>Trigonometría</span><span>Geometría analítica</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="niveles" class="section section-cards">
+      <div class="container">
+        <div class="section-heading reveal">
+          
+          <h2>Cursos</h2>
+        </div>
+        <div class="level-grid">
+          <a class="level-card reveal" href="cursos/1eso.html"><h3>1º ESO</h3><p>Empieza con recursos básicos y actividades guiadas.</p><span class="level-link">Entrar</span></a>
+          <a class="level-card reveal unavailable-course-card" href="cursos/2eso.html" data-unavailable-course><span class="police-tape" aria-hidden="true">No disponible</span><h3>2º ESO</h3><p>Refuerza contenidos y practica con más variedad.</p><span class="level-link">Entrar</span></a>
+          <a class="level-card reveal unavailable-course-card" href="cursos/3eso.html" data-unavailable-course><span class="police-tape" aria-hidden="true">No disponible</span><h3>3º ESO</h3><p>Trabaja con más autonomía y retos progresivos.</p><span class="level-link">Entrar</span></a>
+          <a class="level-card reveal unavailable-course-card" href="cursos/4eso.html" data-unavailable-course><span class="police-tape" aria-hidden="true">No disponible</span><h3>4º ESO</h3><p>Organiza el estudio y afianza lo más importante.</p><span class="level-link">Entrar</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand-help">
+        <p><strong><span class="brand-mark">PI <img src="assets/pi-mascot.png" alt="Mascota PIESO" class="brand-mascot"> ESO</span></strong></p>
+        <details class="footer-help-details">
+          <summary>Ayuda</summary>
+          <p>Si se detecta cualquier incidencia o se quiere poner en contacto con el responsable de la web, contacte al mail: <a href="mailto:studio2026.esp@gmail.com">studio2026.esp@gmail.com</a></p>
+        </details>
+      </div>
+      <a href="#top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

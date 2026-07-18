@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Factorizar | PI ESO</title>
+<link href="../styles.css" rel="stylesheet"/>
+<link href="../assets/favicon.png" rel="icon" type="image/png"/>
+<link href="../assets/favicon.ico" rel="shortcut icon"/>
+</head>
+<body>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<header class="hero course-hero" id="top">
+<nav class="navbar container">
+<a class="brand brand-home-image" href="../index.html#top"><img alt="Ir a la página principal" class="home-brand-img" src="../assets/home-page.png"/></a>
+<div class="tools-menu">
+<button aria-haspopup="true" aria-label="Abrir herramientas" class="tools-button" type="button">
+<img alt="Herramientas" class="tools-img" src="../assets/tool.svg"/>
+</button>
+<div class="tools-dropdown" role="menu">
+<a href="factorizar.html" role="menuitem">Factorizar</a>
+<a href="calculadora-mcm.html" role="menuitem">Calculadora mcm</a>
+<a href="calculadora-mcd.html" role="menuitem">Calculadora mcd</a>
+</div>
+</div>
+<button aria-label="Abrir menú" class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+<div class="nav-links" id="navLinks">
+<a href="../cursos/1eso.html">1º ESO</a>
+<a class="nav-unavailable" data-unavailable-course="" href="../cursos/2eso.html">2º ESO</a>
+<a class="nav-unavailable" data-unavailable-course="" href="../cursos/3eso.html">3º ESO</a>
+<a class="nav-unavailable" data-unavailable-course="" href="../cursos/4eso.html">4º ESO</a>
+</div>
+</nav>
+<section class="course-header container">
+<div class="course-center reveal is-visible">
+<span class="pill">Herramientas</span>
+<h1>Factorizar</h1>
+<p>Introduce un número y obtén su descomposición en factores primos.</p>
+
+</div>
+</section>
+</header>
+<main>
+<section class="section">
+<div class="container tool-calculator-shell">
+<article class="tool-calculator-card reveal is-visible" data-number-tool="factorizar">
+<form class="tool-calculator-form">
+<div class="tool-calculator-field">
+<label for="numero1">Número a factorizar</label>
+<input id="numero1" min="1" name="numero1" placeholder="Escribe el número" step="1" type="number"/>
+</div>
+<div class="quiz-actions">
+<button class="btn btn-primary" type="submit">Factorizar</button>
+</div>
+</form>
+<div aria-live="polite" class="tool-calculator-result"></div>
+</article>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><p><strong><span class="brand-mark">PI <img alt="Mascota PIESO" class="brand-mascot" src="../assets/pi-mascot.png"/> ESO</span></strong></p><a href="#top">Volver arriba ↑</a></div></footer>
+<script src="../script.js"></script>
+</body>
+</html>
