@@ -2,7 +2,6 @@
   'use strict';
 
   const ANALYTICS_ID = 'G-5HLJ0094EX';
-  const ADSENSE_CLIENT = 'ca-pub-2667269605695109';
   let analyticsLoaded = false;
   let tcfListenerAdded = false;
 
@@ -72,12 +71,6 @@
     window.__tcfapi('addEventListener', 2, handleConsent);
     return true;
   }
-
-  // La etiqueta de AdSense carga la CMP publicada y, tras la aprobación, los anuncios.
-  addScript(
-    'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(ADSENSE_CLIENT),
-    { crossorigin: 'anonymous' }
-  );
 
   if (!connectToCmp()) {
     let attempts = 0;
